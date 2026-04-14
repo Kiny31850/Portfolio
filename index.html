@@ -38,15 +38,15 @@
   z-index: 1;
   }
 
-    header h1 { font-size: 2.5rem; }
-    header p { margin-top: 0.5rem; font-size: 1.2rem; }
+    header h1 { font-size: 2.5rem; color: #000; }
+    header p { margin-top: 0.5rem; font-size: 1.2rem; color: #000; }
 
     nav { background: #222; padding: 1rem; text-align: center; }
     nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
     nav a:hover { color: #00adb5; }
 
     section { padding: 3rem 10%; }
-    section h2 { margin-bottom: 1rem; color: #00adb5; }
+    section h2 { margin-bottom: 1rem; color: #ff6f91; }
 
     .about, .contact, .diplomes {
     background: #fff;
@@ -94,7 +94,7 @@
 
 /* TIMELINE */
 .timeline {
-  border-left: 3px solid #00adb5;
+  border-left: 3px solid #ff6f91;
   margin-top: 2rem;
   padding-left: 1.5rem;
 }
@@ -111,14 +111,39 @@
   top: 5px;
   width: 12px;
   height: 12px;
-  background: #00adb5;
+  background: #ff6f91;
   border-radius: 50%;
 }
 
 .date {
   font-weight: bold;
-  color: #00adb5;
+  color: #ff6f91;
 }
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #ff9eb5, #ff6f91);
+  color: #fff;
+  padding: 0.6rem 1.4rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(255, 111, 145, 0.3);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(255, 111, 145, 0.5);
+  background: linear-gradient(135deg, #ffb6c9, #ff4f7a);
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+
 
   </style>
 </head>
@@ -197,7 +222,7 @@
   <section id="diplomes">
       <div class="diplomes">
         <h2>Mes Diplomes</h2>
-          <a href="#" onclick="openDiplomes()">Mes Diplomes</a>
+          <a href="#" class="btn" onclick="openDiplomes()">Mes Diplomes</a>
 
       </div>
 
@@ -208,18 +233,54 @@
     <div class="projects">
       <div class="project-card">
         <h3>Projet 1</h3>
-        <p>Projet Alya creation d'un site web pour mettre en avant les parfum d'une parfumerie</p>
+        <p>Étude et présentation des métiers du SI</p>
       </div>
       <div class="project-card">
         <h3>Projet 2</h3>
-        <p>Site GSB pour pouvoir gérer des tickets et des factures</p>
+        <p>Conception et développement d’un site vitrine HTML, CSS Projet SAM</p>
+        <a href="doc/maquette-Alya.pdf" class="btn">Voir doc</a>
       </div>
       <div class="project-card">
         <h3>Projet 3</h3>
-        <p>Site Forma pour s'incrire a des formations</p>
+        <p>Configuration de l’équipement d’interconnexion (switch, routeurs)</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 4</h3>
+        <p>Mise en œuvre d’un SRV LAMP GLPI + utilisation et paramétrage</p>
+        <a href="doc/GLPI.pdf" class="btn">Voir doc</a>
+      </div>
+      <div class="project-card">
+        <h3>Projet 5</h3>
+        <p>Conception et développement d’une appli légère PHP pour GSB</p>
+      </div>
+      <div class="project-card">
+        <h3>Projet 6</h3>
+        <p>Dispositif veille technologique Cybersécurité</p>
       </div>
     </div>
   </section>
+
+  <section id="veille">
+  <div class="diplomes">
+    <h2> Veille technologique</h2>
+
+    <p style="margin-bottom: 1rem;">
+      Afin d’anticiper les menaces et d’intégrer la sécurité dans mes développements,
+      je réalise une veille technologique en <strong>cybersécurité</strong>.
+    </p>
+
+    <p style="margin-bottom: 1.5rem;">
+      Je me concentre sur :
+      <br>• Les vulnérabilités web (SQL, XSS)
+      <br>• La sécurité des infrastructures
+      <br>• La réglementation (RGPD)
+    </p>
+
+    <a href="https://www.inoreader.com/stream/user/1003548642/tag/Veille%20Technologique/view/html?cs=m" target="_blank" class="btn">
+      🔗 Voir ma veille (Inoreader)
+    </a>
+  </div>
+</section>
 
   <section id="contact">
     <div class="contact">
